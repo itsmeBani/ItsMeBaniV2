@@ -1,0 +1,218 @@
+
+@import "globalstyling";
+
+@import "Colors";
+
+
+
+.con {
+
+  display: flex;
+  justify-content:center;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+
+
+  padding: 5rem;
+  flex-direction: row;
+
+  gap: 10rem;
+
+}
+.con11 {
+
+  display: flex;
+
+  place-items: center;
+
+  justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+.con div  img {
+  min-width: 280px;
+  max-width: 20px;
+  padding-top: 2rem;
+}
+
+
+.con .con12 {
+
+  height: 60%;
+  width: 35%;
+
+}
+.con div  form{
+  background:var(--bg-color-4);
+
+  width: 100%;
+  row-gap: 15px;
+  padding: 1.6rem 2.4rem;
+  border-radius: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.con div  form input{
+  background:var(--bg-color-5);
+  width: 100%;
+  border: none;
+  outline: none;
+  z-index: 1111;
+  padding: 1rem ;
+  border-radius: 0.7rem;
+  color:var(--text-color);
+  font-family: Consolas;
+
+}
+.con div  form label {
+
+
+  text-align: left;
+
+
+
+
+  color: var(--text-color);
+  font-family: Consolas;
+
+}
+.con div  form  div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+}
+.con div  form  div button{
+@include  button_style;
+  padding: 10px  50px;
+
+  z-index: 111111;
+}
+
+
+
+.con div  form button:before {
+@include button_overlay;
+
+}
+
+
+
+
+
+
+textarea{
+
+  z-index: 1111;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--bg-color-5);
+  padding: 1rem 1rem 5rem 1rem;
+  border-radius: 0.7rem;
+  color: $text-color-light;
+  font-family: Consolas;
+
+  height: 100%;
+}
+
+.con div  form h1{
+  text-align: center;
+  font-size: 38px;
+
+  letter-spacing: 1px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, .1);
+  position: relative;
+  font-family: Kanit;
+  color: var(--text-color);
+  width: 90%;
+  font-weight: bold;
+
+}
+
+
+.con div  form::before{
+@include  custom-overlay;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 890px) {
+  .con {
+
+    display: flex;
+    justify-content: end;
+    place-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 0rem;
+
+    .con12 {
+
+      height: 50%;
+      width: 90%;
+
+
+    }
+
+
+  }
+  .con div form {
+
+    width: 100%;
+    row-gap: 15px;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+z-index: 1;
+
+  }
+}
+@media only screen and (max-width: 550px) {
+
+
+  .con div img {
+    min-width: 180px;
+    max-width: 180px;
+  }
+  .con div form h1 {
+    text-align: center;
+    font-size: 23px;
+  }
+
+}
+
+
+
+

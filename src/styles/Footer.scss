@@ -1,0 +1,95 @@
+@import "Colors";
+@import "globalstyling";
+
+.footer {
+
+  display: flex;
+
+  padding: 3rem;
+
+  justify-content: space-around;
+
+flex-direction: row;
+
+  gap: 0.5rem;
+
+  .linkscon {
+
+    display: flex;
+ gap: 0.5rem;
+    a::before {
+      @include links_overlay;
+
+    }
+
+
+    a {
+      @include links_style;
+
+    }
+
+
+    a:hover {
+
+      transform: scale(1.1);
+
+      transition: ease-in-out all 0.2s;
+    }
+  }
+
+
+.author {
+
+h1{
+font-family: Kanit;
+  font-size: 16px;
+  font-weight: 400;
+display: flex;
+  color: var(--text-color);
+  place-items: center;
+  gap: 3px;
+
+
+  img{
+
+
+height: 20px;
+    width: 20px;
+ padding-top: 1px;
+
+  }
+}
+
+}
+}
+
+
+@media only screen and (max-width: 592px) {
+.footer{
+
+gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+
+  padding: 3rem 0 3rem 0 ;
+
+  .linkscon{
+
+    gap:0.5rem;
+  }
+}
+h1{
+
+  display: unset;
+}
+
+ .footer
+  a {
+
+
+    transform: scale(0.8);
+  }
+
+
+}

@@ -1,0 +1,62 @@
+$navbar-bg-light: 240, 255, 253;
+$bg-color-light: #f0fffd;
+$text-color-light: #00331a;
+$accent-light: #0c6;
+$bg-color-2-light: rgba(0, 51, 26, 0.726);
+$bg-color-3-light: #e0e0e0;
+$bg-color-4-light:  rgba(0,51,26,.032);
+$bg-color-5-light:rgba(0,51,26,.151);
+$glass-light: rgba(240, 255, 253, 0.1);
+
+
+
+
+$navbar-bg-dark: 23, 23, 23;
+$bg-color-dark: #171717;
+$text-color-dark: #f5f5f5;
+$accent-dark: #00e673;
+$bg-color-2-dark: #292929;
+$bg-color-3-dark: #292929;
+$bg-color-4-dark: #1f1f1f;
+$glass-dark: rgba(23, 23, 23, 0.33);
+$bg-color-5-dark:#292929;
+
+
+:root {
+
+
+  --navbar-bg:  240, 255, 253;
+  --bg-color:#f0fffd;
+  --text-color: #00331a;
+  --accent:  #00e673;
+  --bg-color-2: rgba(0, 51, 26, 0.726);
+  --bg-color-3: #e0e0e0;
+  --bg-color-4:  rgba(0,51,26,.032);
+  --bg-color-5: rgba(0,51,26,.151);
+  --glass:rgba(240, 255, 253, 0.1);
+}
+
+
+
+[data-theme='dark'] {
+  --navbar-bg: 23,23,23;
+  --bg-color: #171717;
+  --text-color: #f5f5f5;
+  --accent: #00e673;
+  --bg-color-2: #292929;
+  --bg-color-3: #292929;
+  --bg-color-4: #1f1f1f;
+  --bg-color-5:#292929;
+  --glass: rgba(23, 23, 23, 0.33);
+}
+
+//
+//$navbar-bg-light: $navbar-bg-dark;
+//$bg-color-light: $bg-color-dark;
+//$text-color-light: $text-color-dark;
+//$accent-light: $accent-dark;
+//$bg-color-2-light: $bg-color-2-dark;
+//$bg-color-3-light: $bg-color-3-dark;
+//$bg-color-4-light: $bg-color-4-dark;
+//$glass-light: $glass-dark;
+//$bg-color-5-light: $bg-color-5-dark;
